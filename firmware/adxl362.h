@@ -52,7 +52,7 @@ uint8_t usi_transfer(uint8_t data);
 #define ADXL_MOSI    PA5
 #define ADXL_MISO    PA6
 #define ADXL_SCK     PA4
-#define ADXL_CS      PA7
+#define ADXL_CS      PA3
 #define ADXL_CS_HIGH ADXL_PORT |= (1 << ADXL_CS)
 #define ADXL_CS_LOW  ADXL_PORT &= ~(1 << ADXL_CS)
 
@@ -60,11 +60,11 @@ uint8_t usi_transfer(uint8_t data);
 #define ADXL362_INT1_DDR  DDRB
 #define ADXL362_INT1_PORT PORTB
 #define ADXL362_INT1_PIN  PINB
-#define ADXL362_INT2_DDR  DDRA
-#define ADXL362_INT2_PORT PORTA
-#define ADXL362_INT2_PIN  PINA
+#define ADXL362_INT2_DDR  DDRB
+#define ADXL362_INT2_PORT PORTB
+#define ADXL362_INT2_PIN  PINB
 #define ADXL362_INT1      PB2
-#define ADXL362_INT2      PA3
+#define ADXL362_INT2      PB1
 
 // axis definitions for read functions
 #define X 0

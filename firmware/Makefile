@@ -8,7 +8,7 @@ FUSE_L  = 0x62
 FUSE_H  = 0xd7
 AVRDUDE = avrdude -c usbtiny -P usb -p $(DEVICE)
 
-CFLAGS  = -Iusbdrv -I. -DDEBUG_LEVEL=0
+CFLAGS  = -DDEBUG_LEVEL=0
 OBJECTS =  sbl.o adxl362.o
 
 COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
