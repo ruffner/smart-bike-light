@@ -31,13 +31,18 @@ int main()
   //sei();
 
   while ( 42 ){
-    _delay_ms(100);
+    _delay_ms(1000);
     int8_t x_val = read_axis(X);
 
-    if( x_val < 0 )
-      TEST_LED_ON;
-    else
-      TEST_LED_OFF;
+    
+    for ( ;x_val > 0; x_val-- ){
+      PORTA ^= (1 << PA7);
+      _delay_ms(200);
+
+      PORTA ^= (1 << PA7);
+      _delay_ms(200);
+
+    }
 
   }
   
