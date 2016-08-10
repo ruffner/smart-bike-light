@@ -3424,7 +3424,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <parts>
 <part name="U$1" library="SparkFun-DigitalIC" deviceset="ATTINY84" device=""/>
 <part name="U2" library="SparkFun-PowerIC" deviceset="AL8805" device="" value="AL8805WS"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="POWER" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603" value="0.3R"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="MBRA140" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value="1uF"/>
@@ -3457,7 +3457,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="U$1" gate="G$1" x="53.34" y="38.1"/>
 <instance part="U2" gate="G$1" x="43.18" y="111.76"/>
-<instance part="J1" gate="G$1" x="160.02" y="93.98" rot="R180"/>
+<instance part="POWER" gate="G$1" x="160.02" y="93.98" rot="R180"/>
 <instance part="R1" gate="G$1" x="63.5" y="121.92" rot="R90"/>
 <instance part="D1" gate="G$1" x="76.2" y="86.36" rot="R90"/>
 <instance part="C1" gate="G$1" x="63.5" y="106.68"/>
@@ -3571,7 +3571,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="25.4" y1="81.28" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="POWER" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="152.4" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="91.44" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
@@ -3648,7 +3648,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="VIN" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="POWER" gate="G$1" pin="1"/>
 <wire x1="152.4" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="93.98" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 <label x="149.86" y="101.6" size="1.778" layer="95"/>
