@@ -1,7 +1,7 @@
 # smart-bike-light
 Motion sensing bike light that automatically turns itself off.
 
-Effectively featuring a SparkFun femtobuck constant current driver.
+Featuring an integrated SparkFun femtobuck constant current driver, seen in the upper left of the schematic, below.
 
 A work in progress, waiting on the new analog accel board to be printed:
 
